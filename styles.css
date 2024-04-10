@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex; /* Added to use flex properties */
+    justify-content: space-between; /* Adjusted for aligning items to both ends */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Navigation Styles */
+nav {
+    background: #008cba;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+}
+
+nav ul li {
+    margin-left: 20px; /* Ensure space between items */
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 40px;
+    color: #333;
+}
+
+header p {
+    font-size: 20px;
+    color: #666;
+}
+
+/* Section Styles */
+section {
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p, section li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style: square inside;
+}
+
+/* Contact Section */
+#contact a {
+    color: #008cba;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+/* Add some hover effects for links */
+a:hover {
+    color: #008cba;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center; /* Center items vertically */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Center items when stacked */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
